@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Message;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -26,4 +27,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get the messages that belong to the user
+     */
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
 }
