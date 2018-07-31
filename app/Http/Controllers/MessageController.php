@@ -34,8 +34,7 @@ class MessageController extends Controller
      */
     public function index(Request $request)
     {
-        $messages = Message::with('user')
-            ->orderByDesc('updated_at');
+        $messages = Message::with('user')->orderByDesc('updated_at');
 
         if ($request->has('user_id')) {
             // Redirect if not owner
@@ -87,8 +86,6 @@ class MessageController extends Controller
         ]);
 
         return redirect('/messages');
-
-
     }
 
     /**
@@ -115,8 +112,7 @@ class MessageController extends Controller
             return redirect('messages')->withErrors('Unauthorized to edit message');
         }
 
-        return view('messages.edit')
-            ->with('message', $message);
+        return view('messages.edit')->with('message', $message);
     }
 
     /**

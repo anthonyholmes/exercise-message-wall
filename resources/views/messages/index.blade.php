@@ -30,7 +30,7 @@
     <div class="card" style="margin-bottom: 1em;">
         <div class="card-body">
             <h6 class="card-subtitle mb-2 text-muted">
-                <strong>{{ $message->user->name }}</strong>
+                <b>{{ $message->user->name }}</b>
                 {{ $message->user->email }}
                 <i style="font-size: .9em">{{ $message->updated_at->format('F j, Y') }}</i>
             </h6>
