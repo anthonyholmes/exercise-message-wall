@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Message Wall</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -62,6 +62,13 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            @media (max-width: 1100px) {
+                .links a {
+                    display: block;
+                    margin-bottom: 1em;
+                }
+            }
         </style>
     </head>
     <body>
@@ -79,16 +86,23 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Sites I've worked on
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://empiretoday.com" target="_blank">Empire Today</a>
+                    <a href="https://gettruesecurity.com" target="_blank">TrueSecurity (ADT)</a>
+                    <a href="https://docbsfreshkitchen.com" target="_blank">Doc B's</a>
+                    <a href="https://geneandjudes.com" target="_blank">Gene and Jude's</a>
+                    <a href="https://odeumexpo.com" target="_blank">Odeum Expo</a>
+                    <a href="http://hastypudding.org" target="_blank">Hasty Pudding Club (Harvard)</a>
                 </div>
+
+                <hr>
+
+                <p class="links">
+                    These are some websites I've worked on. Login/Register to view the code example.
+                </p>
             </div>
         </div>
     </body>
