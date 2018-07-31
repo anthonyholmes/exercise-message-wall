@@ -18,5 +18,14 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    methods: {
+        deleteMessage(id) {
+            const confirmed = confirm('Are you sure you want to delete your message?');
+            if (confirmed) {
+                const form = document.getElementById(`deleteMessage${id}`);
+                form.submit();
+            }
+        }
+    }
 });
